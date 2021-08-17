@@ -1,0 +1,62 @@
+body {
+    background-color: pink;
+}
+
+.border {
+    background-color: #fff;
+    width: 900px;
+    height: 400px;
+    margin-left: 30px;
+    border-radius: 0 100px 100px 0;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#curved-corner-topright {
+    width: 510px;
+    height: 140px;
+    overflow: hidden;
+    position: absolute;
+    top: -75px;
+    transform: rotate(180deg);
+}
+#curved-corner-topright:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+#curved-corner-topright:before {
+    top: 0;
+    right: 0;
+    box-shadow: 50px -50px 0 0 #fff;
+}
+
+#curved-corner-topright-test {
+    width: 510px;
+    height: 140px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -75px;
+    transform: scale(-1, 1)
+}
+#curved-corner-topright-test:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+#curved-corner-topright-test:before {
+    top: 0;
+    right: 0;
+    box-shadow: 50px -50px 0 0 #fff;
+}
